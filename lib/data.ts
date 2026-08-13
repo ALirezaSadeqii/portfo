@@ -67,7 +67,7 @@ export const personal: Personal = {
   email: "alirezasadeghi2300@gmail.com",
   phone: "+90 539 364 6090",
   github: "https://github.com/ALirezaSadeqii",
-  linkedin: "https://linkedin.com/in/alirezasadeghi", // update if different
+  linkedin: "https://www.linkedin.com/in/alireza-sadeghi-023126284/",
   tagline: "Building modern web applications.",
   bio: [
     "Full-Stack Web Developer specializing in modern web applications and business software.",
@@ -91,7 +91,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Tools & Platforms",
-    items: ["Git", "GitHub", "Vercel", "Render", "Cursor", "Claude", "devExpress"],
+    items: ["Git", "GitHub", "Vercel", "Netlify", "Render", "Cursor", "Claude", "devExpress"],
   },
 ];
 
@@ -198,7 +198,7 @@ export const education: EducationItem[] = [
     institution: "Istanbul Aydın University",
     degree: "Bachelor of Computer Engineering",
     years: "2023 – 2026",
-    gpa: null,
+    gpa: "3.13 / 4.00",
   },
   {
     institution: "Istanbul Aydın University",
