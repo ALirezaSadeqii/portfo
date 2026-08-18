@@ -168,27 +168,15 @@ function ProjectPreview({ project, index }: ProjectPreviewProps) {
   if (project.image) {
     return (
       <div className="relative w-full bg-bg-secondary border-b border-border-subtle overflow-hidden" style={{ height: "220px" }}>
-        {/* Subtle browser chrome bar */}
-        <div className="absolute top-0 left-0 right-0 z-10 flex items-center gap-1.5 px-4 py-2.5 bg-bg-primary/80 backdrop-blur-sm border-b border-border-subtle/50">
-          <span className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
-          <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
-          <span className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
-          <div className="flex-1 mx-3">
-            <div className="mx-auto max-w-[180px] h-4 rounded bg-bg-secondary/80 border border-border-subtle/40 flex items-center px-2">
-              <span className="text-[9px] text-text-muted/60 truncate font-mono">{project.name.toLowerCase()}.app</span>
-            </div>
-          </div>
-        </div>
-
         {/* Screenshot fills the panel */}
         <img
           src={project.image}
           alt={`${project.name} interface`}
-          className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
+          className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
         />
 
         {/* Project index watermark */}
-        <div className="absolute bottom-2 right-3 text-5xl font-black text-white/5 select-none leading-none">
+        <div className="absolute bottom-2 right-3 text-5xl font-black text-white/5 select-none leading-none pointer-events-none">
           {String(index + 1).padStart(2, "0")}
         </div>
       </div>

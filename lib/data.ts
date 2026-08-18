@@ -167,7 +167,7 @@ export const projects: Project[] = [
       "Operational reporting and business summaries",
       "Automated scheduled maintenance and data backup system",
     ],
-    image: null,
+    image: "/projects/altikservice.png",
     github: null,
     live: null,
     category: "Real Product",
