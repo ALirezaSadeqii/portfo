@@ -104,9 +104,9 @@ export const experience: ExperienceItem[] = [
     endDate: "September 2026",
     current: false,
     highlights: [
-      "Worked across ERP modules including Sales, Purchasing, Human Resources, Finance, Accounting, and Orientation — supporting business operations and system requirements.",
-      "Contributed to the development and maintenance of corporate websites built on the .NET Framework using HTML, CSS, JavaScript, and Bootstrap.",
-      "Serve as one of the full-stack administrators responsible for maintaining company websites, updating content, and implementing UI improvements.",
+      "Worked across ERP modules including Sales, Purchasing, Human Resources, Finance, Accounting, and Orientation, supporting business operations and system requirements",
+      "Contributed to the development and maintenance of corporate websites built on the .NET Framework using the MVC architecture, HTML, CSS, JavaScript, and Bootstrap",
+      "Served as one of the full-stack administrators responsible for maintaining company websites, updating content, and implementing UI improvements.",
       "Designed and implemented BI reports and printer forms using SQL and DevExpress.",
       "Developed and customized business modules within the company's web application to meet operational requirements.",
       "Provided technical support to users through the company's support system and collaborated with customers to resolve application-related issues.",
