@@ -45,9 +45,9 @@ export default function Experience() {
                 </div>
 
                 {/* Context note */}
-                <p className="text-sm text-text-muted mb-5 leading-relaxed border-l-2 border-accent/40 pl-4">
+                {/* <p className="text-sm text-text-muted mb-5 leading-relaxed border-l-2 border-accent/40 pl-4">
                   Working across ERP modules covering Sales, Purchasing, HR, Finance, Accounting, and Orientation — serving real clients in production environments.
-                </p>
+                </p> */}
 
                 {/* Highlights */}
                 <ul className="space-y-3" role="list">
@@ -55,7 +55,7 @@ export default function Experience() {
                     <li key={i} className="flex items-start gap-3">
                       <span className="text-accent mt-1 flex-shrink-0" aria-hidden="true">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <polyline points="20 6 9 17 4 12"/>
+                          <polyline points="20 6 9 17 4 12" />
                         </svg>
                       </span>
                       <span className="text-text-secondary text-sm leading-relaxed">{point}</span>

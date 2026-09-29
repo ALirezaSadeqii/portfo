@@ -104,7 +104,7 @@ export default function Hero() {
         {/* Subtle code decoration */}
         <div className="hero-code-decoration absolute right-6 bottom-16 hidden xl:block" aria-hidden="true">
           <pre className="text-xs text-text-muted/40 font-mono leading-relaxed select-none">
-{`const developer = {
+            {`const developer = {
   name: "Alireza Sadeghi",
   stack: ["Next.js", "Node.js", "Supabase"],
   focus: "business applications",

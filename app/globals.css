@@ -100,19 +100,43 @@ body {
    ============================================================ */
 
 /* Backgrounds */
-.bg-bg-primary { background-color: var(--color-bg-primary); }
-.bg-bg-secondary { background-color: var(--color-bg-secondary); }
-.bg-bg-card { background-color: var(--color-bg-card); }
+.bg-bg-primary {
+  background-color: var(--color-bg-primary);
+}
+
+.bg-bg-secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.bg-bg-card {
+  background-color: var(--color-bg-card);
+}
 
 /* Text */
-.text-text-primary { color: var(--color-text-primary); }
-.text-text-secondary { color: var(--color-text-secondary); }
-.text-text-muted { color: var(--color-text-muted); }
-.text-accent { color: var(--color-accent); }
+.text-text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
 
 /* Border */
-.border-border-subtle { border-color: var(--color-border-subtle); }
-.border-accent { border-color: var(--color-accent); }
+.border-border-subtle {
+  border-color: var(--color-border-subtle);
+}
+
+.border-accent {
+  border-color: var(--color-accent);
+}
 
 /* ============================================================
    SECTION LAYOUT
@@ -325,7 +349,7 @@ button:focus-visible {
 }
 
 .hero-grid {
-  background-image: 
+  background-image:
     linear-gradient(var(--color-border-subtle) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-border-subtle) 1px, transparent 1px);
   background-size: 60px 60px;
@@ -333,11 +357,9 @@ button:focus-visible {
 }
 
 .hero-glow {
-  background: radial-gradient(
-    circle,
-    color-mix(in srgb, var(--color-accent) 6%, transparent) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      color-mix(in srgb, var(--color-accent) 6%, transparent) 0%,
+      transparent 70%);
 }
 
 /* Hero animation */
@@ -363,6 +385,7 @@ button:focus-visible {
     opacity: 0;
     transform: translateX(20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -458,6 +481,7 @@ button:focus-visible {
    PRINT STYLES
    ============================================================ */
 @media print {
+
   .fixed,
   nav {
     display: none !important;

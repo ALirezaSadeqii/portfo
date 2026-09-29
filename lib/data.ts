@@ -71,7 +71,7 @@ export const personal: Personal = {
   tagline: "Building modern web applications.",
   bio: [
     "Full-Stack Web Developer specializing in modern web applications and business software.",
-    "Focused on building complete products across frontend, backend, APIs, databases, and business logic, with a primary stack of React, Next.js, Node.js, and JavaScript.",
+    "Focused on building complete products across frontend, backend, APIs, databases, and business logic, with a primary stack of React, Next.js, Node.js, Nest.js, TypeScript and JavaScript.",
     "With 4+ years of professional experience, the work spans real-world business systems and applications across areas such as CRM, ERP, finance, sales, HR, and operations — from complex business requirements to reliable, production-ready software.",
   ],
 };
@@ -79,11 +79,11 @@ export const personal: Personal = {
 export const skills: SkillGroup[] = [
   {
     category: "Frontend",
-    items: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "Bootstrap"],
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Bootstrap"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs"],
+    items: ["Node.js", "Express.js", "Nest.js", "REST APIs"],
   },
   {
     category: "Database",

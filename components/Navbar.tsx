@@ -37,11 +37,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-bg-primary/95 backdrop-blur-md border-b border-border-subtle shadow-sm"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main navigation">
         <a
@@ -77,28 +76,24 @@ export default function Navbar() {
           id="mobile-menu-button"
         >
           <span
-            className={`block w-5 h-0.5 bg-text-primary transition-all duration-300 ${
-              menuOpen ? "rotate-45 translate-y-2" : ""
-            }`}
+            className={`block w-5 h-0.5 bg-text-primary transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""
+              }`}
           />
           <span
-            className={`block w-5 h-0.5 bg-text-primary transition-all duration-300 ${
-              menuOpen ? "opacity-0" : ""
-            }`}
+            className={`block w-5 h-0.5 bg-text-primary transition-all duration-300 ${menuOpen ? "opacity-0" : ""
+              }`}
           />
           <span
-            className={`block w-5 h-0.5 bg-text-primary transition-all duration-300 ${
-              menuOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
+            className={`block w-5 h-0.5 bg-text-primary transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
           />
         </button>
       </nav>
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden transition-all duration-300 overflow-hidden ${
-          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        } bg-bg-primary/98 backdrop-blur-md border-b border-border-subtle`}
+        className={`md:hidden transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          } bg-bg-primary/98 backdrop-blur-md border-b border-border-subtle`}
         id="mobile-menu"
         aria-hidden={!menuOpen}
       >
