@@ -33,13 +33,14 @@ export interface Project {
   id: number;
   name: string;
   tagline: string;
+  abstract?: string;
   description: string;
   techStack: string[];
   features: string[];
   image: string | null;
-  github: string | null;
+  github?: string | null;
   githubBackend?: string | null;
-  live: string | null;
+  live?: string | null;
   category: string;
 }
 
@@ -117,8 +118,32 @@ export const experience: ExperienceItem[] = [
 export const projects: Project[] = [
   {
     id: 1,
+    name: "HairTherapist",
+    tagline: "Hair Care & Appointment Management Platform",
+    abstract:
+      "Full-stack hair care and booking platform featuring real-time availability calendar, appointment scheduling, and a protected admin reservation dashboard.",
+    description:
+      "A full-stack hair therapy platform built with Next.js and NestJS, designed to provide a professional online presence and a streamlined appointment booking experience. Powered by a PostgreSQL database hosted on Neon and managed with Prisma ORM, the platform features a public monthly availability calendar, secure appointment booking, and a protected admin dashboard for managing reservations.",
+    techStack: ["Next.js", "JavaScript", "NestJS", "TypeScript", "Prisma", "PostgreSQL", "Neon"],
+    features: [
+      "Minimal, professional landing page focused on hair therapy and hair care",
+      "Interactive monthly calendar with real-time appointment availability",
+      "Public appointment booking with duplicate reservation prevention",
+      "Secure admin authentication with JWT and HTTP-only cookies",
+      "Protected admin dashboard for appointment management and cancellation",
+      "PostgreSQL database with Prisma ORM for structured data management",
+      "Separate frontend and backend architecture for maintainability and scalability",
+    ],
+    image: "/projects/hairtherapist.png",
+    live: "https://hairtherapist.vercel.app",
+    category: "Real Product",
+  },
+  {
+    id: 2,
     name: "HamrahStu",
     tagline: "Education & University Data Platform",
+    abstract:
+      "Centralized education platform cataloging universities, academic programs, scholarships, and tuition with automated cron maintenance workflows.",
     description:
       "A full-stack education platform providing structured information on universities, academic programs, scholarships, and tuition. Built with Next.js and Supabase, it includes a secure admin dashboard for managing platform data and an authenticated user experience backed by a relational PostgreSQL database. Implemented an automated scheduled system for application health and maintenance.",
     techStack: ["Next.js", "JavaScript", "Supabase", "PostgreSQL"],
@@ -131,13 +156,15 @@ export const projects: Project[] = [
     ],
     image: "/projects/hamrahstu.png",
     github: null,
-    live: null,
+    live: 'https://hamrahstu.vercel.app/login',
     category: "Real Product",
   },
   {
-    id: 2,
+    id: 3,
     name: "Arzino",
     tagline: "Financial Data Platform",
+    abstract:
+      "Real-time financial market platform delivering live FX rates, precious metals spread pricing, and cryptocurrency tracking with a custom caching API.",
     description:
       "A full-stack financial data platform delivering real-time foreign exchange rates, precious metals pricing, and cryptocurrency data. Built a custom Node.js/Express.js backend to integrate external financial data sources, applying buy/sell pricing logic and response caching to ensure reliability and reduce unnecessary external calls. The Next.js frontend consumes this API to present live market data cleanly.",
     techStack: ["Next.js", "Node.js", "Express.js", "JavaScript", "REST APIs"],
@@ -154,9 +181,11 @@ export const projects: Project[] = [
     category: "Real Product",
   },
   {
-    id: 3,
+    id: 4,
     name: "AltikService",
     tagline: "Service & Business Management System",
+    abstract:
+      "Complete service management system handling customer records, vehicle history, staff activity, and automated scheduled database backups.",
     description:
       "A full-stack business management application built for a real service operation. Handles customer records, vehicle data, service visit tracking, staff and financial records, and operational reporting. Built on Next.js with a Supabase/PostgreSQL backend, featuring structured relational data, automated scheduled maintenance processes, and a backup system to improve data reliability and recovery.",
     techStack: ["Next.js", "JavaScript", "Supabase", "PostgreSQL"],
@@ -169,13 +198,15 @@ export const projects: Project[] = [
     ],
     image: "/projects/altikservice.png",
     github: null,
-    live: null,
+    live: 'https://altikautoservice.vercel.app',
     category: "Real Product",
   },
   {
-    id: 4,
+    id: 5,
     name: "NexaCRM",
     tagline: "Full-Stack CRM Application",
+    abstract:
+      "Full-stack CRM platform featuring pipeline stage management, activity logs, contact tracking, and Supabase Row-Level Security permissions.",
     description:
       "A full-stack CRM application built with Next.js and Supabase, demonstrating end-to-end business application development. Covers user authentication, contact and company management, a deal pipeline, activity tracking, and role-based access control enforced through Supabase Row-Level Security policies at the database level.",
     techStack: ["Next.js", "JavaScript", "Supabase", "PostgreSQL"],
@@ -188,7 +219,7 @@ export const projects: Project[] = [
     ],
     image: "/projects/nexacrm.png",
     github: "https://github.com/ALirezaSadeqii/nexaCRM",
-    live: null,
+    live: 'https://nexa-crm-one.vercel.app',
     category: "Full-Stack",
   },
 ];

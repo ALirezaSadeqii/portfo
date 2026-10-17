@@ -405,14 +405,45 @@ button:focus-visible {
 }
 
 /* ============================================================
-   PROJECT CARDS
+   PROJECT CARDS & MODAL
    ============================================================ */
 .project-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
 }
 
 .project-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-border-subtle));
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes modalBackdropFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalContentPop {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-backdrop-animate {
+  animation: modalBackdropFade 0.22s ease-out forwards;
+}
+
+.modal-content-animate {
+  animation: modalContentPop 0.26s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* ============================================================
