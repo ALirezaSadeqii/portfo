@@ -19,6 +19,12 @@ export interface SkillGroup {
   items: string[];
 }
 
+export interface Reference {
+  name: string;
+  title: string;
+  phone: string;
+}
+
 export interface ExperienceItem {
   company: string;
   position: string;
@@ -27,6 +33,7 @@ export interface ExperienceItem {
   endDate: string;
   current: boolean;
   highlights: string[];
+  references?: Reference[];
 }
 
 export interface Project {
@@ -111,6 +118,18 @@ export const experience: ExperienceItem[] = [
       "Designed and implemented BI reports and printer forms using SQL and DevExpress.",
       "Developed and customized business modules within the company's web application to meet operational requirements.",
       "Provided technical support to users through the company's support system and collaborated with customers to resolve application-related issues.",
+    ],
+    references: [
+      {
+        name: "Erdost Onur Berktaş",
+        title: "CEO",
+        phone: "+90 532 646 9067",
+      },
+      {
+        name: "Ece Ilkay Aydın",
+        title: "HR",
+        phone: "+90 553 091 5372",
+      },
     ],
   },
 ];
